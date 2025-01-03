@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashen Fernando</title>
+    <link rel="icon" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fred-fire-symbol-flame-logo-design-image143731172&psig=AOvVaw2YCzrFJ4d0rk2z6Z3v3wuf&ust=1735984448044000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJim2p2k2YoDFQAAAAAdAAAAABAJ" type="image/x-icon">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#2563EB',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+        }
+        .section-fade {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .section-fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold gradient-text">SHASHEN FERNANDO</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary transition-colors duration-300">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition-colors duration-300">About</a>
+                    <a href="#expertise" class="text-gray-700 hover:text-primary transition-colors duration-300">Expertise</a>
+                    <a href="#experience" class="text-gray-700 hover:text-primary transition-colors duration-300">Experience</a>
+                    <a href="#contact-details" class="text-gray-700 hover:text-primary transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="section-fade">
+                <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                    <span class="gradient-text">Hi , I'm Shashen</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8">
+                    Specializing in secure, scalable backend solutions at LOLC Technologies
+                </p>
+                <a href="#contact" class="inline-block bg-primary text-white px-8 py-3 rounded-lg hover:bg-secondary transition-colors duration-300">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="section-fade">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">About Me</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                           I'm Shashen Fernando ,
+                        </p>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            As a core member of the iPay Sri Lanka team at LOLC Technologies, I specialize in designing and developing robust backend systems that power one of the country's leading digital payment platforms.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                            My focus lies in creating secure, scalable solutions that ensure seamless financial transactions while maintaining the highest standards of system reliability and data protection.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-6 bg-gray-50 rounded-lg hover:shadow-md transition-shadow duration-300">
+                            <h3 class="font-bold text-gray-900 mb-2">Backend Development</h3>
+                            <p class="text-gray-600">API design, system architecture, performance optimization</p>
+                        </div>
+                        <div class="p-6 bg-gray-50 rounded-lg hover:shadow-md transition-shadow duration-300">
+                            <h3 class="font-bold text-gray-900 mb-2">Database Management</h3>
+                            <p class="text-gray-600">Query optimization, data security, maintenance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Expertise Section -->
+<section id="expertise" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="section-fade">
+            <h2 class="text-3xl font-bold text-gray-900 mb-12">Technical Expertise</h2>
+            <div class="grid md:grid-cols-4 gap-8"> <!-- Updated to have 4 columns -->
+                <!-- Languages & Frameworks Card -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <h3 class="font-bold text-gray-900 mb-4">Languages & Frameworks</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-primary rounded-full"></span>
+                            <span>Java</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-primary rounded-full"></span>
+                            <span>Spring Boot</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-primary rounded-full"></span>
+                            <span>RESTful APIs</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Database Technologies Card -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <h3 class="font-bold text-gray-900 mb-4">Database Technologies</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-primary rounded-full"></span>
+                            <span>MySQL</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-primary rounded-full"></span>
+                            <span>Oracle Database</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-primary rounded-full"></span>
+                            <span>Database Optimization</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Tools & Technologies Card -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <h3 class="font-bold text-gray-900 mb-4">Tools & Technologies</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-primary rounded-full"></span>
+                            <span>Git</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-primary rounded-full"></span>
+                            <span>Maven/Gradle</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-primary rounded-full"></span>
+                            <span>Swagger</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Front-End Development Card -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <h3 class="font-bold text-gray-900 mb-4">Front-End Development</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-primary rounded-full"></span>
+                            <span>HTML</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-primary rounded-full"></span>
+                            <span>CSS</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-primary rounded-full"></span>
+                            <span>JavaScript</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="section-fade">
+                <h2 class="text-3xl font-bold text-gray-900 mb-12">Work Experience</h2>
+                <div class="border-l-2 border-primary pl-8 space-y-12">
+                    <div>
+                        <h3 class="font-bold text-gray-900 text-xl mb-2">Backend Developer</h3>
+                        <p class="text-primary mb-4">LOLC Technologies - iPay Sri Lanka</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center space-x-2">
+                                <span class="w-2 h-2 bg-primary rounded-full"></span>
+                                <span>Designing and maintaining robust backend systems</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <span class="w-2 h-2 bg-primary rounded-full"></span>
+                                <span>Implementing secure payment processing solutions</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <span class="w-2 h-2 bg-primary rounded-full"></span>
+                                <span>Optimizing database performance and security</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="contact-details">
+           <h2 class="font-bold text-gray-900 text-xl mt-12 mb-4">Contact Details</h2>
+            <div class="border-l-2 border-primary pl-8 space-y-4 text-gray-600">
+                <!-- Mobile -->
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-phone-alt text-primary"></i>
+                    <span>0754682445</span>
+                </div>
+                <!-- Email -->
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-envelope text-primary"></i>
+                    <a href="mailto:shashenf71@gmail.com" class="hover:underline">shashenf71@gmail.com</a>
+                </div>
+                              <!-- LinkedIn -->
+                              <div class="flex items-center space-x-2">
+                                <i class="fab fa-linkedin text-primary"></i>
+                                <a href="https://www.linkedin.com/in/shashen-fernando-8838ba253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="hover:underline">Shashen Fernando</a>
+                            </div>
+                <!-- Instagram -->
+                <div class="flex items-center space-x-2">
+                    <i class="fab fa-instagram text-primary"></i>
+                    <a href="https://www.instagram.com/shash3n.f/profilecard/?igsh=am81MWlkM3g1Ym52" target="_blank" class="hover:underline">Shashen Fernando</a>
+                                </div>
+                <!-- Facebook -->
+                <div class="flex items-center space-x-2">
+                    <i class="fab fa-facebook text-primary"></i>
+                    <a href="https://www.facebook.com/share/iVkoNB38DMCf2Wot/?mibextid=LQQJ4d" target="_blank" class="hover:underline">Shashen Fernando</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="section-fade">
+                <h2 class="text-3xl font-bold text-gray-900 mb-12">Get in Touch</h2>
+                <form class="max-w-lg mx-auto">
+                    <div class="mb-6">
+                        <label class="block text-gray-700 mb-2" for="name">Name</label>
+                        <input type="text" required id="name" class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 mb-2" for="email">Email</label>
+                        <input type="email" required id="email" class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 mb-2" for="message">Message</label>
+                        <textarea id="message" required rows="4" class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-lg hover:bg-secondary transition-colors duration-300">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.section-fade').forEach((section) => {
+            observer.observe(section);
+        });
+
+        // Form submission handling
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
